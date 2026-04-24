@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Florence’s Belle of the Ball</title>
+    <style>
+        :root {
+            --purple: #8e44ad;
+            --light-purple: #f3e5f5;
+            --dark-text: #2c3e50;
+        }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; color: var(--dark-text); line-height: 1.6; background-color: #fff; }
+        
+        /* Hero Section */
+        .hero { background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url('butterfly-pattern.png'); 
+                text-align: center; padding: 60px 20px; background-color: var(--light-purple); }
+        .hero h1 { font-size: 3rem; color: var(--purple); margin-bottom: 10px; }
+        .hero p { font-size: 1.2rem; max-width: 800px; margin: 0 auto; }
+
+        /* Sections */
+        .container { max-width: 1000px; margin: auto; padding: 40px 20px; }
+        .section-title { text-align: center; color: var(--purple); margin-bottom: 30px; }
+
+        /* Ticket Grid */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .card { border: 2px solid var(--light-purple); border-radius: 15px; padding: 30px; text-align: center; transition: 0.3s; }
+        .card:hover { border-color: var(--purple); transform: translateY(-5px); }
+        .price { font-size: 2rem; font-weight: bold; color: var(--purple); }
+
+        /* Buttons */
+        .btn { display: inline-block; padding: 12px 25px; margin-top: 15px; background-color: var(--purple); color: white; 
+               text-decoration: none; border-radius: 25px; font-weight: bold; transition: 0.3s; }
+        .btn:hover { background-color: #732d91; }
+        .btn-outline { background: transparent; border: 2px solid var(--purple); color: var(--purple); }
+
+        /* Donation Box */
+        .bank-details { background: var(--light-purple); padding: 20px; border-radius: 10px; text-align: center; border: 1px dashed var(--purple); }
+        
+        footer { text-align: center; padding: 40px; background: #f9f9f9; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+<section class="hero">
+    <h1>✨ Florence’s Belle of the Ball ✨</h1>
+    <p>Join us for a truly special evening filled with love, hope, and celebration 💜</p>
+    <p><strong>Saturday 5th September 2026 | Marriott Hotel, Glasgow</strong></p>
+    <a href="#tickets" class="btn">Book Your Tickets</a>
+</section>
+
+<div class="container">
+    <div style="text-align: center; margin-bottom: 50px;">
+        <h2 class="section-title">Our Story</h2>
+        <p>After a brave two-year battle with leukaemia, our beautiful Florence rang the bell — a moment that inspired this magical event. We are raising awareness for childhood cancer and giving back to the incredible Schiehallion Ward at Glasgow Children’s Hospital.</p>
+    </div>
+
+    <h2 id="tickets" class="section-title">Tickets & Booking</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Individual Ticket</h3>
+            <p class="price">£100</p>
+            <p>Single entry, 3-course meal, and welcome fizz.</p>
+            <a href="mailto:florencebelleball2026@://gmail.com Ticket Booking" class="btn">Book Ticket</a>
+        </div>
+        <div class="card">
+            <h3>Table of 8</h3>
+            <p class="price">£800</p>
+            <p>Reserved table for 8 guests. Perfect for friends and family.</p>
+            <a href="mailto:florencebelleball2026@://gmail.com of 8 Booking" class="btn">Book Table</a>
+        </div>
+        <div class="card">
+            <h3>Table of 10</h3>
+            <p class="price">£1,000</p>
+            <p>Reserved table for 10 guests. Best value for larger groups.</p>
+            <a href="mailto:florencebelleball2026@://gmail.com of 10 Booking" class="btn">Book Table</a>
+        </div>
+    </div>
+
+    <hr style="margin: 60px 0; border: 0; border-top: 1px solid #eee;">
+
+    <div class="grid" style="align-items: center;">
+        <div>
+            <h2 class="section-title" style="text-align: left;">Make a Donation</h2>
+            <p>If you cannot attend but wish to support the Schiehallion Ward, please consider a cash donation directly to our event account.</p>
+            <div class="bank-details">
+                <p><strong>Starling Bank</strong><br>
+                Account: 09008080<br>
+                Sort Code: 60-83-71</p>
+            </div>
+        </div>
+        <div style="text-align: center;">
+            <h2 class="section-title">Donate a Prize</h2>
+            <p>We are looking for amazing items for our Auction & Raffle!</p>
+            <a href="mailto:florencebelleball2026@://gmail.com Donation Offer" class="btn btn-outline">Email Prize Details</a>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>In aid of Glasgow Children’s Hospital Charity</p>
+    <p>Contact: <a href="mailto:florencebelleball2026@gmail.com">florencebelleball2026@gmail.com</a></p>
+</footer>
+
+</body>
+</html>
